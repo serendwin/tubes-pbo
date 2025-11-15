@@ -1,4 +1,4 @@
-package com.manusia;
+package com.proyek.manusia;
 
 public class Agensi {
 

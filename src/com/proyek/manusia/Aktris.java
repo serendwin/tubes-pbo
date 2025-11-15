@@ -1,8 +1,8 @@
-package com.manusia;
+package com.proyek.manusia;
 
 public class Aktris extends Agensi {
 
-    private String drama;
+    private String drama; //properti
     private int jumlahDrama;
     private String agensi;
 
@@ -11,15 +11,15 @@ public class Aktris extends Agensi {
         super(nama, umur, jenisKelamin, kewarganegaraan, tahun);
         this.drama = drama;
         this.jumlahDrama = jumlahDrama;
-        this.agensi = agensi;
+        this.agensi = agensi; //constructor
     }
 
-    @Override
+    @Override 
     public void bekerja() {
         System.out.println(nama + " sedang syuting drama " + drama);
     }
 
-    public void news() {
+    public void news() { //methods
         System.out.println("Aktris " + nama + " akan bergabung dengan " + drama + " yang sudah dikonfirmasi oleh " + agensi);
     }
 

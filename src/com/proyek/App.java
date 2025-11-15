@@ -1,4 +1,8 @@
- package com.manusia;
+ package com.proyek;
+
+import com.proyek.manusia.Aktor;
+import com.proyek.manusia.Aktris;
+import com.proyek.manusia.Idol;
 
 public class App {
     public static void main(String[] args) {
