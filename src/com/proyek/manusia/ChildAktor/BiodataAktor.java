@@ -1,16 +1,16 @@
-package com.proyek.manusia;
+package com.proyek.manusia.ChildAktor;
 
-public class Aktor extends Agensi {
+import com.proyek.manusia.Agensi;
+
+public class BiodataAktor extends Agensi {
 
     private String film;
-    private int jumlahFilm;
     private String agensi;
 
-    public Aktor(String nama, int umur, String jenisKelamin, String kewarganegaraan, int tahun,
-                 String film, int jumlahFilm, String agensi) {
+    public BiodataAktor(String nama, int umur, String jenisKelamin, String kewarganegaraan, int tahun,
+                 String film, String agensi) {
         super(nama, umur, jenisKelamin, kewarganegaraan, tahun);
         this.film = film;
-        this.jumlahFilm = jumlahFilm;
         this.agensi = agensi;
     }
 

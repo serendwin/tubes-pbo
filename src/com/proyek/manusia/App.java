@@ -13,10 +13,8 @@ public class App {
         BiodataAktris aktris1 = new BiodataAktris("Kim Ji-won", 29, "Perempuan", "Korea Selatan", 2015,
                 "Queen of Tears", 10, "LA Entertainment");
 
-        BiodataAktor aktor1 = new BiodataAktor("Park Seo-joon", 33, "Laki-laki", "Korea Selatan", 2016,
-                "Concrete Utopia", 12, "LA Entertainment");
+        BiodataAktor aktor1 = new BiodataAktor("Park Seo-joon", 33, "Laki-laki", "Korea Selatan", 2016, "Concrete Utopia", "LA Entertaintment");
 
-               
         System.out.println("===== IDOL =====");                
         System.out.println("================================================================================");
         idol1.tampilProfil();

@@ -1,6 +1,8 @@
-package com.proyek.manusia;
+package com.proyek.manusia.ChildIdol;
 
-public class Idol extends Agensi {
+import com.proyek.manusia.Agensi;
+
+public class BiodataIdol extends Agensi {
 
     private String grup;
     private String agensi;
@@ -8,7 +10,7 @@ public class Idol extends Agensi {
     private int jumlahAlbum;
     private String genre;
 
-    public Idol(String nama, int umur, String jenisKelamin, String kewarganegaraan, int tahun,
+    public BiodataIdol(String nama, int umur, String jenisKelamin, String kewarganegaraan, int tahun,
                 String grup, String agensi, int tahunDebut, int jumlahAlbum, String genre) {
         super(nama, umur, jenisKelamin, kewarganegaraan, tahun);
         this.grup = grup;
