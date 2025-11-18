@@ -5,11 +5,6 @@ import com.proyek.manusia.Agensi;
 
 public class TicketingFanmeetingAktris extends Aktris {
 
-    private String kategoriTiket;
-    private double hargaTiket;
-    private String lokasi;
-    private String tanggal;
-
     public TicketingFanmeetingAktris(
             String Nama,
             String Kewarganegaraan,
@@ -29,11 +24,7 @@ public class TicketingFanmeetingAktris extends Aktris {
     ) {
 
         super(Nama, Kewarganegaraan, TtlLahir, TtlDebut, MasaTrainee, Posisi,
-                ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, 0);
-
-        this.lokasi = lokasi;
-        this.tanggal = tanggal;
-        setKategori(kategoriTiket); 
+                ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, 0); 
     }
 
     // Validasi kategori tiket
@@ -64,30 +55,9 @@ public class TicketingFanmeetingAktris extends Aktris {
         } else {
             return 1000000; 
     }
-    }
-    // Kategori + Harga
-    private void setKategori(String kategori) {
-        if (validasiKategori(kategori)) {
-            this.kategoriTiket = kategori.toUpperCase();
-            this.hargaTiket = tentukanHarga(kategori);
-        } else {
-            System.out.println("Kategori tidak valid! Menggunakan harga default.");
-            this.kategoriTiket = "UNKNOWN";
-            this.hargaTiket = 1000000;
-        }
-    }
+}
 
-    // ubah kategori tiket
-    public void ubahKategoriTiket(String kategoriBaru) {
-        setKategori(kategoriBaru);
-        System.out.println("Kategori tiket berhasil diubah menjadi: " + kategoriTiket);
-    }
-
-    //  harga
-    public double getHarga() {
-        return hargaTiket;
-    }
-
+    @Override
     public void infoEvent() {
         System.out.println("====== INFO EVENT ======");
         System.out.println("Aktris  : " + Nama);
@@ -97,6 +67,7 @@ public class TicketingFanmeetingAktris extends Aktris {
         System.out.println("=========================");
     }
 
+    @Override
     public void cetakTiket() {
         System.out.println("====== TICKET FANMEETING ======");
         System.out.println("Aktris    : " + Nama);

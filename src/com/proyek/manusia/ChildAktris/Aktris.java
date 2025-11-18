@@ -15,4 +15,10 @@ public class Aktris extends Agensi {
     public void tampilkanAktris() {
         System.out.println("menampilkan biodata aktris");
     }
+   public void infoEvent() {
+        System.out.println("Menampilkan Info Event");
+    }
+    public void cetakTiket() {
+        System.out.println("Menampilkan Ticket Fanmeeting");
+    }
 }
