@@ -3,11 +3,12 @@ package com.proyek.manusia.ChildAktris;
 public class BiodataAktris extends Aktris {
 
     public BiodataAktris(String Nama, String Kewarganegaraan, String TtlLahir, String TtlDebut,
-                         int MasaTrainee, String Posisi, String ListDrama, String ListMovie,
-                         String ListAlbum, String Penghargaan, int tahun, String Event, double Price) {
+                  int MasaTrainee, String Posisi, String ListDrama, String ListMovie,
+                  String ListAlbum, String Penghargaan, int tahun,
+                  String Event, double Price, String tanggal, String kategoriTiket) {
 
         super(Nama, Kewarganegaraan, TtlLahir, TtlDebut, MasaTrainee, Posisi,
-              ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, Price);
+              ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, Price, tanggal, kategoriTiket);
     }
 
     @Override
