@@ -42,12 +42,4 @@ public class Agensi {
         System.out.println("----------------------------------------------------------------------");}
     public void GarisAe() {
         System.out.println("______________________________________________________________________");}
-    public void InfoUmum() {
-        System.out.println("Nama: " + Nama);
-        System.out.println("Kewarganegaraan: " + Nama);
-        System.out.println("Tanggal Lahir: " + Nama);
-        System.out.println("Tahun Debut: " + Nama);
-        System.out.println("Masa Trainee: " + Nama);}
-    public void Recentkegiatan() {
-        System.out.println(Nama + " sedang melangsungkan consert ke-100 mereka di Saitama Stadiun.");}
 }
