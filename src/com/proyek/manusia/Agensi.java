@@ -42,4 +42,16 @@ public class Agensi {
         System.out.println("----------------------------------------------------------------------");}
     public void GarisAe() {
         System.out.println("______________________________________________________________________");}
+
+
+public void tampilData() {
+    System.out.println("Data: " + Nama + " (" + Kewarganegaraan + ")");
+}
+
+public void begabung() {
+    System.out.println(Nama + " bergabung dengan agensi.");
+}
+
+public void aktif() {
+    System.out.println(Nama + " sedang aktif dalam kegiatannya.");
 }

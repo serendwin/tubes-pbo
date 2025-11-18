@@ -51,3 +51,31 @@ public class BiodataAktris extends Agensi {
     }
 }
 
+public void news() {
+    System.out.println(Nama + " muncul di berita terbaru.");
+}
+
+public void dispatch(boolean hadir) {
+    if (hadir) {
+        System.out.println(Nama + " hadir di acara premier.");
+    } else {
+        System.out.println(Nama + " tidak hadir di acara premier.");
+    }
+}
+
+public void fanMeeting() {
+    System.out.println(Nama + " akan mengadakan fan meeting bulan depan.");
+}
+
+@Override
+public void bekerja() {
+    System.out.println(Nama + " sedang syuting drama.");
+}
+
+public void wawancara() {
+    System.out.println(Nama + " sedang mengikuti wawancara majalah.");
+}
+
+public void hiatus() {
+    System.out.println(Nama + " sedang hiatus sementara.");
+}
