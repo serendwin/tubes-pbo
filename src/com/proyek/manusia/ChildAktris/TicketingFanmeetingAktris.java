@@ -1,6 +1,6 @@
 package com.proyek.manusia.ChildAktris;
 
-public class TicketingFanmeetingAktris extends BiodataAktris {
+public class TicketingFanmeetingAktris extends Aktris {
 
     private String kategoriTiket;
     private double hargaTiket;

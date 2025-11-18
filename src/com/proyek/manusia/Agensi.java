@@ -20,7 +20,7 @@ public class Agensi {
     public Agensi(String Nama, String Kewarganegaraan, String TtlLahir, String TtlDebut,
                 int MasaTrainee, String Posisi, String ListDrama, String ListMovie, 
                 String ListAlbum, String Penghargaan, int tahun, String Event, double Price) {
-        this.Nama = Nama;
+        this.Nama = "Jisung";
         this.Kewarganegaraan = Kewarganegaraan;
         this.TtlLahir = TtlLahir;
         this.TtlDebut = TtlDebut; 
@@ -34,24 +34,12 @@ public class Agensi {
         this.Event = Event; 
         this.Price = Price; }
 
-    public void Header() {
-        System.out.println("______________________________________________________________________");
-        System.out.println("=====Hello My Dear, Welcome to Our House, MihuMihu Entertaintment!====");
-        System.out.println("----------------------------------------------------------------------");
-        System.out.println("Choose Your Fighter Baby:");
-        System.out.println("----------------------------------------------------------------------");}
-    public void GarisAe() {
-        System.out.println("______________________________________________________________________");}
-
-
-public void tampilData() {
-    System.out.println("Data: " + Nama + " (" + Kewarganegaraan + ")");
-}
-
-public void begabung() {
-    System.out.println(Nama + " bergabung dengan agensi.");
-}
-
-public void aktif() {
-    System.out.println(Nama + " sedang aktif dalam kegiatannya.");
-}
+        public void Header() {
+            System.out.println("______________________________________________________________________");
+            System.out.println("=====Hello My Dear, Welcome to Our House, MihuMihu Entertaintment!====");
+            System.out.println("----------------------------------------------------------------------");
+            System.out.println("Choose Your Fighter Baby:");
+            System.out.println("----------------------------------------------------------------------");}
+        public void GarisAe() {
+            System.out.println("______________________________________________________________________");}
+    }
