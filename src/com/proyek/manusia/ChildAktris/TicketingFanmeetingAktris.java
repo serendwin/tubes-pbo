@@ -24,21 +24,31 @@ public class TicketingFanmeetingAktris extends BiodataAktris {
             String tanggal,
             String kategoriTiket
     ) {
+
         super(Nama, Kewarganegaraan, TtlLahir, TtlDebut, MasaTrainee, Posisi,
                 ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, 0);
 
         this.lokasi = lokasi;
         this.tanggal = tanggal;
-        this.kategoriTiket = kategoriTiket;
+        setKategori(kategoriTiket); 
+    }
 
-        if (validasiKategori(kategoriTiket)) {
-            this.hargaTiket = tentukanHarga(kategoriTiket);
+    // Validasi kategori tiket
+    private boolean validasiKategori(String kategori) {
+        if (kategori.equalsIgnoreCase("VVIP")) {
+            return true;
+        } else if (kategori.equalsIgnoreCase("VIP")) {
+            return true;
+        } else if (kategori.equalsIgnoreCase("REGULAR")) {
+            return true;
+        } else if (kategori.equalsIgnoreCase("BALCONY")) {
+            return true;
         } else {
-            System.out.println("Kategori tidak dikenal! Harga default digunakan.");
-            this.hargaTiket = 1000000;
+            return false;
         }
     }
 
+    // Menentukan harga berdasarkan kategori
     private double tentukanHarga(String kategori) {
         if (kategori.equalsIgnoreCase("VVIP")) {
             return 2500000;
@@ -50,28 +60,29 @@ public class TicketingFanmeetingAktris extends BiodataAktris {
             return 500000;
         } else {
             return 1000000; 
+    }
+    }
+    // Kategori + Harga
+    private void setKategori(String kategori) {
+        if (validasiKategori(kategori)) {
+            this.kategoriTiket = kategori.toUpperCase();
+            this.hargaTiket = tentukanHarga(kategori);
+        } else {
+            System.out.println("Kategori tidak valid! Menggunakan harga default.");
+            this.kategoriTiket = "UNKNOWN";
+            this.hargaTiket = 1000000;
         }
     }
 
-    private boolean validasiKategori(String kategori) {
-        return kategori.equalsIgnoreCase("VVIP")
-                || kategori.equalsIgnoreCase("VIP")
-                || kategori.equalsIgnoreCase("REGULAR")
-                || kategori.equalsIgnoreCase("BALCONY");
+    // ubah kategori tiket
+    public void ubahKategoriTiket(String kategoriBaru) {
+        setKategori(kategoriBaru);
+        System.out.println("Kategori tiket berhasil diubah menjadi: " + kategoriTiket);
     }
 
+    //  harga
     public double getHarga() {
         return hargaTiket;
-    }
-
-    public void ubahKategoriTiket(String kategoriBaru) {
-        if (validasiKategori(kategoriBaru)) {
-            this.kategoriTiket = kategoriBaru;
-            this.hargaTiket = tentukanHarga(kategoriBaru);
-            System.out.println("Kategori berhasil diubah ke: " + kategoriBaru);
-        } else {
-            System.out.println("Kategori tidak valid! Tidak ada perubahan.");
-        }
     }
 
     public void infoEvent() {
@@ -80,17 +91,17 @@ public class TicketingFanmeetingAktris extends BiodataAktris {
         System.out.println("Event   : " + Event);
         System.out.println("Lokasi  : " + lokasi);
         System.out.println("Tanggal : " + tanggal);
-        System.out.println("============================");
+        System.out.println("=========================");
     }
 
     public void cetakTiket() {
-        System.out.println("========= TICKET FANMEETING ========");
-        System.out.println("Aktris   : " + Nama);
-        System.out.println("Event    : " + Event);
-        System.out.println("Lokasi   : " + lokasi);
-        System.out.println("Tanggal  : " + tanggal);
-        System.out.println("Kategori : " + kategoriTiket);
-        System.out.println("Harga    : Rp " + hargaTiket);
-        System.out.println("======================================");
+        System.out.println("====== TICKET FANMEETING ======");
+        System.out.println("Aktris    : " + Nama);
+        System.out.println("Event     : " + Event);
+        System.out.println("Lokasi    : " + lokasi);
+        System.out.println("Tanggal   : " + tanggal);
+        System.out.println("Kategori  : " + kategoriTiket);
+        System.out.println("Harga     : Rp " + hargaTiket);
+        System.out.println("================================");
     }
 }
