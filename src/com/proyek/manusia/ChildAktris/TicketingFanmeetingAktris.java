@@ -5,29 +5,15 @@ import com.proyek.manusia.Agensi;
 
 public class TicketingFanmeetingAktris extends Aktris {
 
-    public TicketingFanmeetingAktris(
-            String Nama,
-            String Kewarganegaraan,
-            String TtlLahir,
-            String TtlDebut,
-            int MasaTrainee,
-            String Posisi,
-            String ListDrama,
-            String ListMovie,
-            String ListAlbum,
-            String Penghargaan,
-            int tahun,
-            String Event,
-            String lokasi,
-            String tanggal,
-            String kategoriTiket
-    ) {
+    public TicketingFanmeetingAktris(String Nama, String Kewarganegaraan, String TtlLahir, String TtlDebut,
+                  int MasaTrainee, String Posisi, String ListDrama, String ListMovie,
+                  String ListAlbum, String Penghargaan, int tahun,
+                  String Event, double Price, String tanggal, String kategoriTiket) {
 
         super(Nama, Kewarganegaraan, TtlLahir, TtlDebut, MasaTrainee, Posisi,
-                ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, 0); 
+              ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, Price, tanggal, kategoriTiket);
     }
 
-    // Validasi kategori tiket
     private boolean validasiKategori(String kategori) {
         if (kategori.equalsIgnoreCase("VVIP")) {
             return true;
@@ -42,7 +28,6 @@ public class TicketingFanmeetingAktris extends Aktris {
         }
     }
 
-    // Menentukan harga berdasarkan kategori
     private double tentukanHarga(String kategori) {
         if (kategori.equalsIgnoreCase("VVIP")) {
             return 2500000;
@@ -75,7 +60,7 @@ public class TicketingFanmeetingAktris extends Aktris {
         System.out.println("Lokasi    : " + lokasi);
         System.out.println("Tanggal   : " + tanggal);
         System.out.println("Kategori  : " + kategoriTiket);
-        System.out.println("Harga     : Rp " + hargaTiket);
+        System.out.println("Harga     : Rp " + Price);
         System.out.println("================================");
     }
 }
