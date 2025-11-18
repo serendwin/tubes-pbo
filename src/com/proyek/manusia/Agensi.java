@@ -42,13 +42,4 @@ package com.proyek.manusia;
         this.tanggal = tanggal;
         this.kategoriTiket = kategoriTiket;
     }
-
-        public void Header() {
-            System.out.println("______________________________________________________________________");
-            System.out.println("=====Hello My Dear, Welcome to Our House, MihuMihu Entertaintment!====");
-            System.out.println("----------------------------------------------------------------------");
-            System.out.println("Choose Your Fighter Baby:");
-            System.out.println("----------------------------------------------------------------------");}
-        public void GarisAe() {
-            System.out.println("______________________________________________________________________");}
-    }
+}
