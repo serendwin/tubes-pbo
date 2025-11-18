@@ -2,7 +2,8 @@ package com.proyek.manusia.ChildAktris;
 
 import com.proyek.manusia.Agensi;
 
-public class TicketingFanmeetingAktris extends Agensi {
+
+public class TicketingFanmeetingAktris extends Aktris {
 
     private String kategoriTiket;
     private double hargaTiket;
