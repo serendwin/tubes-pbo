@@ -1,45 +1,20 @@
 package com.proyek.manusia;
 
-   public class Agensi {
-    // property biodata
-    protected String Nama;
-    protected String Kewarganegaraan;
-    protected String TtlLahir;
-    protected String TtlDebut;
-    protected int MasaTrainee;
-    protected String Posisi;
-    protected String ListDrama;
-    protected String ListMovie;
-    protected String ListAlbum;
-    protected String Penghargaan;
-    protected int tahun;
+public class Agensi {
+    protected String nama;
+    protected String kewarganegaraan;
+    protected String ttlLahir;
+    protected String ttlDebut;
+    protected int masaTrainee;
 
-    // property ticketing
-    protected String Event;
-    protected double Price;
-    protected String lokasi;
-    protected String tanggal;
-    protected String kategoriTiket;
 
-    public Agensi(String Nama, String Kewarganegaraan, String TtlLahir, String TtlDebut,
-                  int MasaTrainee, String Posisi, String ListDrama, String ListMovie,
-                  String ListAlbum, String Penghargaan, int tahun,
-                  String Event, double Price, String tanggal, String kategoriTiket) {
+    public Agensi(String nama, String kewarganegaraan, String ttlLahir,
+                  String ttlDebut, int masaTrainee) {
 
-        this.Nama = Nama;
-        this.Kewarganegaraan = Kewarganegaraan;
-        this.TtlLahir = TtlLahir;
-        this.TtlDebut = TtlDebut;
-        this.MasaTrainee = MasaTrainee;
-        this.Posisi = Posisi;
-        this.ListDrama = ListDrama;
-        this.ListMovie = ListMovie;
-        this.ListAlbum = ListAlbum;
-        this.Penghargaan = Penghargaan;
-        this.tahun = tahun;
-        this.Event = Event;
-        this.Price = Price;
-        this.tanggal = tanggal;
-        this.kategoriTiket = kategoriTiket;
+        this.nama = nama;
+        this.kewarganegaraan = kewarganegaraan;
+        this.ttlLahir = ttlLahir; 
+        this.ttlDebut = ttlDebut;
+        this.masaTrainee = masaTrainee;
     }
 }

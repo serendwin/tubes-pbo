@@ -4,22 +4,20 @@ import com.proyek.manusia.Agensi;
 
 public class Aktris extends Agensi {
 
-    public Aktris(String Nama, String Kewarganegaraan, String TtlLahir, String TtlDebut,
-                  int MasaTrainee, String Posisi, String ListDrama, String ListMovie,
-                  String ListAlbum, String Penghargaan, int tahun,
-                  String Event, double Price, String tanggal, String kategoriTiket) {
-
-        super(Nama, Kewarganegaraan, TtlLahir, TtlDebut, MasaTrainee, Posisi,
-              ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, Price, tanggal, kategoriTiket);
+    public Aktris(String nama, String kewarganegaraan, String ttlLahir,
+                  String ttlDebut, int masaTrainee) {
+        super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee);
     }
 
     public void tampilkanAktris() {
-        System.out.println("menampilkan biodata aktris");
+        System.out.println("Menampilkan biodata aktris");
     }
-   public void infoEvent() {
-        System.out.println("Menampilkan Info Event");
+
+    public void infoEvent() {
+        System.out.println("Menampilkan info event");
     }
+
     public void cetakTiket() {
-        System.out.println("Menampilkan Ticket Fanmeeting");
+        System.out.println("Menampilkan tiket");
     }
 }

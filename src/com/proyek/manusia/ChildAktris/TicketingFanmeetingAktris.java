@@ -1,66 +1,94 @@
 package com.proyek.manusia.ChildAktris;
 
-import com.proyek.manusia.Agensi;
-
+import java.util.Scanner;
 
 public class TicketingFanmeetingAktris extends Aktris {
 
-    public TicketingFanmeetingAktris(String Nama, String Kewarganegaraan, String TtlLahir, String TtlDebut,
-                  int MasaTrainee, String Posisi, String ListDrama, String ListMovie,
-                  String ListAlbum, String Penghargaan, int tahun,
-                  String Event, double Price, String tanggal, String kategoriTiket) {
+    private String event;
+    private String lokasi;
+    private String tanggal;
+    private String kategori;
+    private double harga;
+    private int qty;
+    private double total;
 
-        super(Nama, Kewarganegaraan, TtlLahir, TtlDebut, MasaTrainee, Posisi,
-              ListDrama, ListMovie, ListAlbum, Penghargaan, tahun, Event, Price, tanggal, kategoriTiket);
-    }
+    public TicketingFanmeetingAktris(String nama, String kewarganegaraan, String ttlLahir,
+                                     String ttlDebut, int masaTrainee,
+                                     String event, String lokasi, String tanggal,
+                                     String kategori) {
 
-    private boolean validasiKategori(String kategori) {
-        if (kategori.equalsIgnoreCase("VVIP")) {
-            return true;
-        } else if (kategori.equalsIgnoreCase("VIP")) {
-            return true;
-        } else if (kategori.equalsIgnoreCase("REGULAR")) {
-            return true;
-        } else if (kategori.equalsIgnoreCase("BALCONY")) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+        super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee);
 
-    private double tentukanHarga(String kategori) {
-        if (kategori.equalsIgnoreCase("VVIP")) {
-            return 2500000;
-        } else if (kategori.equalsIgnoreCase("VIP")) {
-            return 1500000;
-        } else if (kategori.equalsIgnoreCase("REGULAR")) {
-            return 800000;
-        } else if (kategori.equalsIgnoreCase("BALCONY")) {
-            return 500000;
-        } else {
-            return 1000000; 
+        this.event = event;
+        this.lokasi = lokasi;
+        this.tanggal = tanggal;
+        this.kategori = kategori;
+        this.harga = tentukanHarga(kategori);
     }
-}
 
     @Override
     public void infoEvent() {
-        System.out.println("====== INFO EVENT ======");
-        System.out.println("Aktris  : " + Nama);
-        System.out.println("Event   : " + Event);
+        System.out.println("====== INFO EVENT & PRICELIST ======");
+        System.out.println("Aktris  : " + nama);
+        System.out.println("Event   : " + event);
         System.out.println("Lokasi  : " + lokasi);
         System.out.println("Tanggal : " + tanggal);
-        System.out.println("=========================");
+        System.out.println("VVIP     : Rp " + tentukanHarga("VVIP"));
+        System.out.println("VIP      : Rp " + tentukanHarga("VIP"));
+        System.out.println("REGULAR  : Rp " + tentukanHarga("REGULAR"));
+        System.out.println("BALCONY  : Rp " + tentukanHarga("BALCONY"));
+        System.out.println("===================================");
+    }
+
+
+    public void inputTiket(Scanner input) {
+        input.nextLine();
+        System.out.println("====== PEMBELIAN TICKET FANMEETING ======");
+        System.out.println("Aktris    : " + nama);
+        System.out.println("Event     : " + event);
+        System.out.print("Kategori  : ");
+        this.kategori = input.nextLine();
+        this.harga = tentukanHarga(this.kategori);
+        System.out.println("Harga     : Rp " + this.harga);
+        System.out.print("Masukkan jumlah tiket : ");
+        this.qty = input.nextInt();
+        this.total = this.harga * this.qty;
+        System.out.println("=========================================");
+        System.out.println();
     }
 
     @Override
     public void cetakTiket() {
-        System.out.println("====== TICKET FANMEETING ======");
-        System.out.println("Aktris    : " + Nama);
-        System.out.println("Event     : " + Event);
-        System.out.println("Lokasi    : " + lokasi);
-        System.out.println("Tanggal   : " + tanggal);
-        System.out.println("Kategori  : " + kategoriTiket);
-        System.out.println("Harga     : Rp " + Price);
-        System.out.println("================================");
+        System.out.println("========= CETAK TIKET FANMEETING ==========");
+        System.out.println("Aktris       : " + this.nama);
+        System.out.println("Event        : " + this.event);
+        System.out.println("Kategori     : " + this.kategori);
+        System.out.println("Harga/Tiket  : Rp " + this.harga);
+        System.out.println("Jumlah Tiket : " + this.qty);
+        System.out.println("Total Harga  : Rp " + this.total);
+        System.out.println("===========================================");
     }
+
+    public void jiwon() {
+        System.out.println("Anda telah berhasil membeli tiket fanmeeting Kim Jiwoon-!");
+        System.out.println();
+    }
+
+    public void shinhye() {
+        System.out.println("Anda telah berhasil membeli tiket fanmeeting Park Shin-Hye-!");
+        System.out.println();
+    }
+
+    private double tentukanHarga(String kategori) {
+        switch (kategori.toUpperCase()) {
+            case "VVIP": return 2500000;
+            case "VIP": return 1500000;
+            case "REGULAR": return 800000;
+            case "BALCONY": return 500000;
+            default: 
+                System.out.println("Kategori  " + kategori + "  tidak tersedia. Harga default digunakan.");
+                return 0;
+        }
+    }
+    
 }
