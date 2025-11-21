@@ -1,5 +1,7 @@
 package com.proyek.manusia.ChildAktris;
 
+import java.util.Scanner;
+
 import com.proyek.manusia.Agensi;
 
 public class Aktris extends Agensi {
@@ -19,5 +21,17 @@ public class Aktris extends Agensi {
 
     public void cetakTiket() {
         System.out.println("Menampilkan tiket");
+    }
+
+    public void inputTiket(Scanner input) {
+        System.out.println("Input tiketing");
+    }
+s
+    public void jiwon() {
+        System.out.println("Mengeluarkan teks selamat membeli tiket jiwon");
+    }
+
+    public void shinhye() {
+        System.out.println("Mengeluarkan teks selamat membeli tiket shinye");
     }
 }
