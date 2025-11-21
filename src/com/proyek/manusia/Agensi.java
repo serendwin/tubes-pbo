@@ -15,6 +15,5 @@ public class Agensi {
         this.kewarganegaraan = kewarganegaraan;
         this.ttlLahir = ttlLahir; 
         this.ttlDebut = ttlDebut;
-        this.masaTrainee = masaTrainee;
-    }
+        this.masaTrainee = masaTrainee;}
 }

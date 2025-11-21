@@ -34,7 +34,7 @@ public class BiodataIdol extends Idol {
         System.out.println("------------------------------------");}
     @Override
     public void tampilkanbiodatamemberDAY6(){
-        System.out.println("====== BIODATA GROUP NCT DREAM =====");
+        System.out.println("====== BIODATA GROUP DAY6 =====");
         System.out.println("Nama: " + nama);
         System.out.println("Tanggal Lahir: " + ttlLahir);
         System.out.println("Kewarganegaraan: " + kewarganegaraan);
