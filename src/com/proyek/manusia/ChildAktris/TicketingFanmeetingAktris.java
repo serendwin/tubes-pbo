@@ -28,19 +28,20 @@ public class TicketingFanmeetingAktris extends Aktris {
 
     @Override
     public void infoEvent() {
-        System.out.println("====== INFO EVENT & PRICELIST ======");
+        System.out.println("======= INFO EVENT & PRICELIST =======");
         System.out.println("Aktris  : " + nama);
         System.out.println("Event   : " + event);
         System.out.println("Lokasi  : " + lokasi);
         System.out.println("Tanggal : " + tanggal);
+        System.out.println("------- JENIS KATEGORI TIKET -------");
         System.out.println("VVIP     : Rp " + tentukanHarga("VVIP"));
         System.out.println("VIP      : Rp " + tentukanHarga("VIP"));
         System.out.println("REGULAR  : Rp " + tentukanHarga("REGULAR"));
         System.out.println("BALCONY  : Rp " + tentukanHarga("BALCONY"));
-        System.out.println("===================================");
+        System.out.println("=====================================");
     }
 
-
+    @Override
     public void inputTiket(Scanner input) {
         input.nextLine();
         System.out.println("====== PEMBELIAN TICKET FANMEETING ======");
@@ -69,11 +70,13 @@ public class TicketingFanmeetingAktris extends Aktris {
         System.out.println("===========================================");
     }
 
+    @Override
     public void jiwon() {
         System.out.println("Anda telah berhasil membeli tiket fanmeeting Kim Jiwoon-!");
         System.out.println();
     }
 
+    @Override
     public void shinhye() {
         System.out.println("Anda telah berhasil membeli tiket fanmeeting Park Shin-Hye-!");
         System.out.println();

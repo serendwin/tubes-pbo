@@ -1,48 +1,44 @@
 package com.proyek.manusia.ChildIdol;
 
-import com.proyek.manusia.Agensi;
+public class BiodataIdol extends Idol {
 
-public class BiodataIdol extends Agensi {
+    private String posisi;
+    private String album;
+    private String penghargaan;
 
-    private String grup;
-    private String agensi;
-    private int tahunDebut;
-    private int jumlahAlbum;
-    private String genre;
-
-    public BiodataIdol(String nama, int umur, String jenisKelamin, String kewarganegaraan, int tahun,
-                String grup, String agensi, int tahunDebut, int jumlahAlbum, String genre) {
-        super(nama, umur, jenisKelamin, kewarganegaraan, tahun);
-        this.grup = grup;
-        this.agensi = agensi;
-        this.tahunDebut = tahunDebut;
-        this.jumlahAlbum = jumlahAlbum;
-        this.genre = genre;
-    }
+    public BiodataIdol(String nama, String kewarganegaraan, String ttlLahir,
+                         String ttlDebut, int masaTrainee, String posisi,
+                         String drama, String movie, String album, String penghargaan) {
+        super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee);
+        this.posisi = posisi;
+        this.album = album;
+        this.penghargaan = penghargaan;}
 
     @Override
-    public void bekerja() {
-        System.out.println(nama + " sedang latihan untuk comeback bersama grup " + grup);
-    }
-
-    public void tampilPanggung() {
-        System.out.println(nama + " tampil di panggung musik membawakan lagu bergenre " + genre);
-    }
-
-    public void tampilProfil() {
-        System.out.println("Nama " + nama + " Grup " + grup + " Agensi " + agensi);
-    }
-
-    public void news(boolean comeback) {
-    if (comeback) {
-        System.out.println(nama + " sedang bersiap untuk comeback dengan grup " + grup + ".");
-    } else {
-        System.out.println(nama + " belum memiliki jadwal comeback, fokus pada aktivitas solo.");
-    }
-    }   
-
-    public void variety() {
-        System.out.println(nama + " akan hadir di variety show go school pada eps 21");
-    }
-
+    public void tampilkanbiodatagroupidol() {
+        System.out.println("========== BIODATA GROUP ==========");
+        System.out.println("Group Boyband: " + nama);
+        System.out.println("Debut: " + ttlDebut);
+        System.out.println("Album Terakhir: " + album);
+        System.out.println("Penghargaan: " + penghargaan);
+        System.out.println("=====================================");
+        System.out.println();}
+    @Override
+    public void tampilkanbiodatamemberNCTDream(){
+        System.out.println("====== BIODATA GROUP NCT DREAM =====");
+        System.out.println("Nama: " + nama);
+        System.out.println("Tanggal Lahir: " + ttlLahir);
+        System.out.println("Kewarganegaraan: " + kewarganegaraan);
+        System.out.println("Masa Trainee: " + masaTrainee);
+        System.out.println("Posisi: " + posisi);
+        System.out.println("------------------------------------");}
+    @Override
+    public void tampilkanbiodatamemberDAY6(){
+        System.out.println("====== BIODATA GROUP NCT DREAM =====");
+        System.out.println("Nama: " + nama);
+        System.out.println("Tanggal Lahir: " + ttlLahir);
+        System.out.println("Kewarganegaraan: " + kewarganegaraan);
+        System.out.println("Masa Trainee: " + masaTrainee);
+        System.out.println("Posisi: " + posisi);
+        System.out.println("------------------------------------");}
 }

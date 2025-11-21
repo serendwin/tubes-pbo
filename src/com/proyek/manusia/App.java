@@ -56,7 +56,7 @@ public class App {
                 "Abracadabra",
                 "Seoul Arena",
                 "12 Desember 2025",
-                "Reguler"
+                "Regular"
         );
 
 
