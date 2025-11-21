@@ -26,7 +26,11 @@ public class Aktris extends Agensi {
     public void inputTiket(Scanner input) {
         System.out.println("Input tiketing");
     }
+<<<<<<< HEAD
     
+=======
+s
+>>>>>>> 2c7ccf80abb7c6384623f3e1161172c7a0d66583
     public void jiwon() {
         System.out.println("Mengeluarkan teks selamat membeli tiket jiwon");
     }
@@ -34,4 +38,8 @@ public class Aktris extends Agensi {
     public void shinhye() {
         System.out.println("Mengeluarkan teks selamat membeli tiket shinye");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2c7ccf80abb7c6384623f3e1161172c7a0d66583

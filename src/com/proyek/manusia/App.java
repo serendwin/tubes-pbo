@@ -70,16 +70,12 @@ public class App {
         System.out.println("3. Idol");
         System.out.println("4. Keluar");
         System.out.print("Pilih menu : ");
-
         int menuUtama = input.nextInt();
         System.out.println("----------------------------------------------------------------------");
         System.out.println();
-
         switch (menuUtama) {
-
-            case 2: // menu Aktris
+            case 2: 
                 boolean kembaliAktris = false;
-
                 while (!kembaliAktris) {
                     System.out.println("=========== Menu Aktris ===========");
                     System.out.println("1. Biodata");
@@ -98,7 +94,6 @@ public class App {
                             System.out.print("Pilih Aktris : ");
                             int menuBiodata = input.nextInt();
                             System.out.println();
-
                             switch (menuBiodata) {
                                 case 1:
                                     biodata1.tampilkanAktris();
