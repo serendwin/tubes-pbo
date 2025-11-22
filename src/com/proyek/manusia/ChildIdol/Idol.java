@@ -32,5 +32,9 @@ public class Idol extends Agensi{
 
     public void tiketDay6() {
         System.out.println("Mengeluarkan teks selamat membeli tiket Day6");}
-}
 
+    public void infoIdol() {
+        System.out.println("Menampilkan info idol");
+    }
+
+}

@@ -4,32 +4,50 @@ import java.util.Scanner;
 
 public class TicketKonserIdol extends Idol {
 
-    private String eventType;   
+    private String eventType;
     private String eventName;
     private String lokasi;
     private String tanggal;
     private String kategori;
-    private String section;   
+    private String section;
     private double harga;
     private int qty;
     private double total;
 
     public TicketKonserIdol(String nama, String kewarganegaraan, String ttlLahir,
-                      String ttlDebut, int masaTrainee,
-                      String posisi, String drama, String movie,
-                      String album, String penghargaan,
-                      String eventType, String eventName, String lokasi,
-                      String tanggal, String kategori, String section) {
+                            String ttlDebut, int masaTrainee,
+                            String posisi, String drama, String movie,
+                            String album, String penghargaan,
+                            String eventType, String eventName, String lokasi,
+                            String tanggal, String kategori, String section) {
 
         super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee);
 
-        this.eventType = eventType.toUpperCase(); 
+        this.eventType = eventType.toUpperCase();
         this.eventName = eventName;
         this.lokasi = lokasi;
         this.tanggal = tanggal;
         this.kategori = kategori.toUpperCase();
         this.section = section.toUpperCase();
         this.harga = tentukanHarga(eventType, kategori, section);
+    }
+
+    @Override
+    public void infoIdol() {
+        System.out.println("=========== BIODATA IDOL ===========");
+        System.out.println("Nama Idol          : " + nama);
+        System.out.println("Kewarganegaraan    : " + kewarganegaraan);
+        System.out.println("Tanggal Lahir      : " + ttlLahir);
+        System.out.println("Tanggal Debut      : " + ttlDebut);
+        System.out.println("Masa Trainee       : " + masaTrainee + " tahun");
+
+        System.out.println("------ INFORMASI EVENT TERKAIT ------");
+        System.out.println("Event              : " + eventName);
+        System.out.println("Jenis Event        : " + eventType);
+        System.out.println("Lokasi             : " + lokasi);
+        System.out.println("Tanggal            : " + tanggal);
+        System.out.println("=====================================");
+        System.out.println();
     }
 
     @Override
@@ -60,6 +78,7 @@ public class TicketKonserIdol extends Idol {
         System.out.println();
     }
 
+    @Override
     public void inputTiket(Scanner input) {
         input.nextLine();
 
@@ -94,6 +113,7 @@ public class TicketKonserIdol extends Idol {
         System.out.println();
     }
 
+    @Override
     public void cetakTiket() {
         System.out.println("============== CETAK TIKET ==============");
         System.out.println("Nama        : " + nama);
@@ -111,10 +131,26 @@ public class TicketKonserIdol extends Idol {
         System.out.println();
     }
 
+    @Override
+    public String toString() {
+        return  "===== STRUK TIKET (toString) =====\n" +
+                "Nama Idol     : " + nama + "\n" +
+                "Event         : " + eventName + "\n" +
+                "Jenis Event   : " + eventType + "\n" +
+                "Kategori      : " + kategori + "\n" +
+                "Section       : " + (eventType.equals("KONSER") ? section : "-") + "\n" +
+                "Harga/Tiket   : Rp " + harga + "\n" +
+                "Jumlah Tiket  : " + qty + "\n" +
+                "Total Harga   : Rp " + total + "\n" +
+                "===================================\n";
+    }
+
     private double tentukanHarga(String eventType, String kategori, String section) {
 
         kategori = kategori.toUpperCase();
         section = section.toUpperCase();
+
+        
         if (eventType.equals("FANMEETING")) {
             switch (kategori) {
                 case "HI-TOUCH": return 2000000;
@@ -127,6 +163,7 @@ public class TicketKonserIdol extends Idol {
             }
         }
 
+        
         switch (kategori) {
             case "VVIP":
                 if (section.equals("A")) return 3000000;
