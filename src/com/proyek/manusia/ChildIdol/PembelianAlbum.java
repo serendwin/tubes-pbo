@@ -17,6 +17,7 @@ public class PembelianAlbum extends Idol {
         this.harga = tentukanHarga(album);
     }
 
+    @Override
     public void PricelistAlbumnct() {
         System.out.println("========== PRICELIST ALBUM NCT DREAM ==========");
         System.out.println("GLITCH MODE     : Rp " + tentukanHarga("GLITCH MODE"));
@@ -24,6 +25,7 @@ public class PembelianAlbum extends Idol {
         System.out.println("===============================================");
     }
 
+    @Override
     public void PricelistAlbumday6() {
         System.out.println("========== PRICELIST ALBUM DAY6 ==========");
         System.out.println("FOUREVER     : Rp " + tentukanHarga("FOUREVER"));
@@ -31,6 +33,7 @@ public class PembelianAlbum extends Idol {
         System.out.println("==========================================");
     }
 
+    @Override
     public void beliAlbum1(Scanner input) {
         input.nextLine();
         System.out.println("=================================================");
@@ -50,6 +53,7 @@ public class PembelianAlbum extends Idol {
         System.out.println();
     }
 
+    @Override
     public void beliAlbum2(Scanner input) {
         input.nextLine();
         System.out.println("=================================================");
@@ -69,6 +73,7 @@ public class PembelianAlbum extends Idol {
         System.out.println();
     }
 
+    @Override
     public void cetakStruk() {
         System.out.println("=================================================");
         System.out.println("===============  STRUK PEMBELIAN  ===============");

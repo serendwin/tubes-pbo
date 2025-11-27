@@ -131,7 +131,6 @@ public class TicketKonserIdol extends Idol {
         System.out.println();
     }
 
-    @Override
     public String toString() {
         return  "===== STRUK TIKET (toString) =====\n" +
                 "Nama Idol     : " + nama + "\n" +
