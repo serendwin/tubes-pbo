@@ -662,7 +662,8 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int tiketnct = input.nextInt();
                                     System.out.println();
-                                    switch (tiketnct) {
+                                    switch (tiketnct) 
+                                    {
                                         case 1 : 
                                         konser1.infoEvent();
                                         System.out.println("1. Beli Tiket");

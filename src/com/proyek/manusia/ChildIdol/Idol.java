@@ -17,24 +17,39 @@ public class Idol extends Agensi{
 
     public void tampilkanbiodatamemberDAY6() {
         System.out.println("Menampilkan biodata idol");}
-    
-    public void infoEvent() {
-        System.out.println("Menampilkan info event");}
-
-    public void cetakTiket() {
-        System.out.println("Menampilkan tiket");}
-
-    public void inputTiket(Scanner input) {
-        System.out.println("Input tiketing");}
-    
-    public void tiketNCTDREAM() {
-        System.out.println("Mengeluarkan teks selamat membeli tiket NCT DREAM");}
-
-    public void tiketDay6() {
-        System.out.println("Mengeluarkan teks selamat membeli tiket Day6");}
 
     public void infoIdol() {
         System.out.println("Menampilkan info idol");
     }
+
+    public void infoEvent() {
+        System.out.println("Menampilkan info event");}
+
+    public void inputTiket(Scanner input) {
+        System.out.println("Input tiketing");}
+
+    public void cetakTiket() {
+        System.out.println("Menampilkan tiket");}
+
+    public void PricelistAlbumnct() {
+        System.out.println("Menampilkan pricelist album NCT DREAM");
+    }
+
+    public void PricelistAlbumday6() {
+        System.out.println("Menampilkan pricelist album Day6");
+    }
+
+    public void beliAlbum1(Scanner input) {
+        System.out.println("Input pembelian album NCT DREAM");
+    }
+
+    public void beliAlbum2(Scanner input) {
+        System.out.println("Input pembelian album Day6");
+    }
+
+    public void cetakStruk() {
+        System.out.println("Menampilkan struk pembelian album");
+    }
+
 
 }
