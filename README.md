@@ -1,4 +1,4 @@
-# Hi, Selamat Datang di Manajemen MihuMihu Entertaintment! 👋
+# Hi, Selamat Datang di MihuMihu Entertaintment! 👋
 #### Sistem pengelolaan data MihuMihu Entertaintment merupakan tema proyek yang kelompok kami pilih untuk mengimplementasikan konsep Inheritance dan Polimorphsm dalam pemrograman berorientasi objek (OOP) di bahasa pemrograman Java.
 ---
 ## ✨Struktur Class✨
