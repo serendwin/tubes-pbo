@@ -1,6 +1,9 @@
 package com.proyek.manusia;
 
 import java.util.Scanner;
+
+import com.proyek.manusia.ChildAktor.BiodataAktor;
+import com.proyek.manusia.ChildAktor.TicketFanmeetingaktor;
 import com.proyek.manusia.ChildAktris.BiodataAktris;
 import com.proyek.manusia.ChildAktris.TicketingFanmeetingAktris;
 import com.proyek.manusia.ChildIdol.BiodataIdol;
@@ -12,7 +15,59 @@ public class App {
 
         Scanner input = new Scanner(System.in);
 
-        BiodataAktris biodata1 = new BiodataAktris(
+
+        BiodataAktor aktor1 = new BiodataAktor(
+                "Lee Min-ho",
+                "Korea Selatan",
+                "22 Juni 1987",
+                "2003",
+                0,
+                "Actor",
+                "The Heirs",
+                "Gangnam Blues",
+                "—",
+                "Best Actor Award"
+        );
+
+        BiodataAktor aktor2 = new BiodataAktor(
+                "Lee Dong-wook",
+                "Korea Selatan",
+                "6 November 1981",
+                "1999",
+                0,
+                "Actor",
+                "A shop for killers",
+                "The Beauty Inside",
+                "—",
+                "Best Actor Award"
+        );
+
+        TicketFanmeetingaktor leeminho = new TicketFanmeetingaktor(
+                "Lee Min-ho",
+                "Korea Selatan",
+                "22 Juni 1987",
+                "2003",
+                0,
+                "Lee Min-ho Global Fanmeeting Tour 2026",
+                "Jakarta Convention Center (JCC)",
+                "10 Mei 2026",
+                "VIP"
+        );
+
+        TicketFanmeetingaktor leedongwook = new TicketFanmeetingaktor(
+                "Lee Dong-wook",
+                "Korea Selatan",
+                "6 November 1981",
+                "1999",
+                0,
+                "Lee Dong-wook Asian Fanmeeting 2026 My Dear",
+                "ICE BSD Tangerang",
+                "25 Mei 2026",
+                "VVIP"
+        );
+
+
+        BiodataAktris aktris1 = new BiodataAktris(
                 "Kim Ji-won",
                 "Korea Selatan",
                 "19 Oktober 1992",
@@ -25,7 +80,7 @@ public class App {
                 "Best Actress Award pada tahun 2016"
         );
 
-        TicketingFanmeetingAktris tiket1 = new TicketingFanmeetingAktris(
+        TicketingFanmeetingAktris jiwon = new TicketingFanmeetingAktris(
                 "Kim Ji-won",
                 "Korea Selatan",
                 "19 Oktober 1995",
@@ -37,7 +92,7 @@ public class App {
                 "VIP"
         );
 
-        BiodataAktris biodata2 = new BiodataAktris(
+        BiodataAktris aktris2 = new BiodataAktris(
                 "Park Shin-hye",
                 "Korea Selatan",
                 "18 Februari 1990",
@@ -50,7 +105,7 @@ public class App {
                 "Most Popular Film Actress pada tahun 2015"
         );
 
-        TicketingFanmeetingAktris tiket2 = new TicketingFanmeetingAktris(
+        TicketingFanmeetingAktris shinhye = new TicketingFanmeetingAktris(
                 "Park Shin-hye",
                 "Korea Selatan",
                 "18 Februari 1990",
@@ -87,7 +142,7 @@ public class App {
                 "Golden Disc Award - Best Band"
         );
 
-        BiodataIdol dream1 = new BiodataIdol(
+        BiodataIdol mark = new BiodataIdol(
                 "Mark",
                 "Korea Selatan / Kanada",
                 "2 Agustus 1999",
@@ -99,7 +154,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol dream2 = new BiodataIdol(
+        BiodataIdol renjun = new BiodataIdol(
                 "Renjun",
                 "Tiongkok",
                 "23 Maret 2000",
@@ -111,7 +166,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol dream3 = new BiodataIdol(
+        BiodataIdol jeno = new BiodataIdol(
                 "Jeno",
                 "Korea Selatan",
                 "23 April 2000",
@@ -123,7 +178,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol dream4 = new BiodataIdol(
+        BiodataIdol haechan = new BiodataIdol(
                 "Haechan",
                 "Korea Selatan",
                 "6 Juni 2000",
@@ -135,7 +190,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol dream5 = new BiodataIdol(
+        BiodataIdol jaemin = new BiodataIdol(
                 "Jaemin",
                 "Korea Selatan",
                 "13 Agustus 2000",
@@ -147,7 +202,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol dream6 = new BiodataIdol(
+        BiodataIdol chenle = new BiodataIdol(
                 "Chenle",
                 "Tiongkok",
                 "22 November 2001",
@@ -159,7 +214,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol dream7 = new BiodataIdol(
+        BiodataIdol jisung = new BiodataIdol(
                 "Jisung",
                 "Korea Selatan",
                 "5 Februari 2002",
@@ -171,7 +226,7 @@ public class App {
                 "Seoul Music Awards Bonsang"
         );
 
-        BiodataIdol day1 = new BiodataIdol(
+        BiodataIdol sungjin = new BiodataIdol(
                 "Sungjin",
                 "Korea Selatan",
                 "16 Januari 1993",
@@ -183,7 +238,7 @@ public class App {
                 "Golden Disc Award - Best Band"
         );
 
-        BiodataIdol day2 = new BiodataIdol(
+        BiodataIdol youngk = new BiodataIdol(
                 "Young K",
                 "Korea Selatan",
                 "19 Desember 1993",
@@ -195,7 +250,7 @@ public class App {
                 "Golden Disc Award - Best Band"
         );
 
-        BiodataIdol day3 = new BiodataIdol(
+        BiodataIdol wonpiil = new BiodataIdol(
                 "Wonpil",
                 "Korea Selatan",
                 "28 April 1994",
@@ -207,7 +262,7 @@ public class App {
                 "Golden Disc Award - Best Band"
         );
 
-        BiodataIdol day4 = new BiodataIdol(
+        BiodataIdol dowoon = new BiodataIdol(
                 "Dowoon",
                 "Korea Selatan",
                 "25 Agustus 1995",
@@ -323,7 +378,114 @@ public class App {
         int menuUtama = input.nextInt();
         System.out.println("----------------------------------------------------------------------");
         System.out.println();
-        switch (menuUtama) {
+        switch (menuUtama) 
+        {
+            case 1: 
+                boolean kembaliAktor = false;
+                while (!kembaliAktor) {
+                    System.out.println("=================================================================");
+                    System.out.println("=========================  MENU AKTOR   =========================");
+                    System.out.println("=================================================================");
+                    System.out.println("1. Lihat Biodata");
+                    System.out.println("2. Info Event dan Pembelian Tiket");
+                    System.out.println("3. Kembali ke Menu Utama");
+                    System.out.println("-----------------------------------------------------------------");   
+                    System.out.print("Pilih Menu : ");
+                    int menuAktor = input.nextInt();
+                    System.out.println();
+                    switch (menuAktor) 
+                    {
+                        case 1:  
+                            System.out.println("=================================================================");
+                            System.out.println("=====================  PILIH BIODATA AKTOR  =====================");
+                            System.out.println("=================================================================");
+                            System.out.println("1. Lee Min-ho");
+                            System.out.println("2. Lee Dong-wook");
+                            System.out.println("3. Kembali");
+                            System.out.println("-----------------------------------------------------------------");                                
+                            System.out.print("Pilih Aktor : ");
+                            int menuBiodataaktor = input.nextInt();
+                            System.out.println();
+                            switch (menuBiodataaktor) {
+                                case 1:
+                                    aktor1.tampilkanAktor();
+                                    break;
+
+                                case 2:
+                                    aktor2.tampilkanAktor();
+                                    break;
+
+                                case 3:
+                                    break;
+
+                                default:
+                                    System.out.println("Pilihan tidak valid!");
+                            }
+                            break;
+
+                        case 2:  
+                            System.out.println("=================================================================");
+                            System.out.println("====================  PRICELIST & INFO EVENT  ===================");
+                            System.out.println("=================================================================");
+                            System.out.println("1. Lee Min-ho");
+                            System.out.println("2. Lee Dong-wook");
+                            System.out.println("3. Kembali");
+                            System.out.println("-----------------------------------------------------------------");
+                            System.out.print("Pilih Aktor : ");
+                            int menueventaktor = input.nextInt();
+                            System.out.println();
+                            switch (menueventaktor) 
+                            {
+                                case 1:
+                                    leeminho.infoEvent();
+                                    System.out.println("1. Beli Tiket");
+                                    System.out.println("2. Kembali");
+                                    System.out.print("Pilih : ");
+                                    int tiketaktor1 = input.nextInt();
+                                    System.out.println();
+                                    if (tiketaktor1 == 1) {
+                                        leeminho.inputTiket(input);
+                                        leeminho.cetakTiket();
+                                        leeminho.leeminho();
+                                    } else {
+                                        System.out.println("Anda membatalkan pembelian.");
+                                    }
+                                    break;
+
+                                case 2:
+                                    leedongwook.infoEvent();
+                                    System.out.println("1. Beli Tiket");
+                                    System.out.println("2. Kembali");
+                                    System.out.print("Pilih : ");
+                                    int tiketaktor2 = input.nextInt();
+                                    System.out.println();
+                                    if (tiketaktor2 == 1) {
+                                        leedongwook.inputTiket(input);
+                                        leedongwook.cetakTiket();
+                                        leedongwook.dongwook();
+                                    } else {
+                                        System.out.println("Anda membatalkan pembelian.");
+                                    }
+                                    break;
+
+                                case 3:
+                                    break;
+
+                                default:
+                                    System.out.println("Anda telah keluar");
+                            }
+                            break;
+
+                        case 3:
+                            kembaliAktor = true;
+                            break;
+
+                        default:
+                            System.out.println("Pilihan tidak valid!");
+                    }
+                }
+                break;
+
             case 2: 
                 boolean kembaliAktris = false;
                 while (!kembaliAktris) {
@@ -341,22 +503,22 @@ public class App {
                     {
                         case 1:  
                             System.out.println("=================================================================");
-                            System.out.println("=====================  PILIH BIODATA AKTRIS =====================");
+                            System.out.println("=====================  PILIH BIODATA AKTRIS  ====================");
                             System.out.println("=================================================================");
                             System.out.println("1. Kim Ji-won");
                             System.out.println("2. Park Shin-Hye");
                             System.out.println("3. Kembali");
                             System.out.println("-----------------------------------------------------------------");                                
                             System.out.print("Pilih Aktris : ");
-                            int menuBiodata = input.nextInt();
+                            int menubiodataaktris = input.nextInt();
                             System.out.println();
-                            switch (menuBiodata) {
+                            switch (menubiodataaktris) {
                                 case 1:
-                                    biodata1.tampilkanAktris();
+                                    aktris1.tampilkanAktris();
                                     break;
 
                                 case 2:
-                                    biodata2.tampilkanAktris();
+                                    aktris2.tampilkanAktris();
                                     break;
 
                                 case 3:
@@ -369,44 +531,44 @@ public class App {
 
                         case 2:  
                             System.out.println("=================================================================");
-                            System.out.println("==================== PRICELIST & INFO EVENT  ====================");
+                            System.out.println("====================  PRICELIST & INFO EVENT  ===================");
                             System.out.println("=================================================================");
                             System.out.println("1. Kim Ji-won");
                             System.out.println("2. Park Shin-Hye");
                             System.out.println("3. Kembali");
                             System.out.println("-----------------------------------------------------------------");
                             System.out.print("Pilih Aktris : ");
-                            int menuEvent = input.nextInt();
+                            int menueventaktris = input.nextInt();
                             System.out.println();
-                            switch (menuEvent) 
+                            switch (menueventaktris) 
                             {
                                 case 1:
-                                    tiket1.infoEvent();
+                                    jiwon.infoEvent();
                                     System.out.println("1. Beli Tiket");
                                     System.out.println("2. Kembali");
                                     System.out.print("Pilih : ");
-                                    int beli1 = input.nextInt();
+                                    int tiketaktris1 = input.nextInt();
                                     System.out.println();
-                                    if (beli1 == 1) {
-                                        tiket1.inputTiket(input);
-                                        tiket1.cetakTiket();
-                                        tiket1.jiwon();
+                                    if (tiketaktris1 == 1) {
+                                        jiwon.inputTiket(input);
+                                        jiwon.cetakTiket();
+                                        jiwon.jiwon();
                                     } else {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
 
                                 case 2:
-                                    tiket2.infoEvent();
+                                    shinhye.infoEvent();
                                     System.out.println("1. Beli Tiket");
                                     System.out.println("2. Kembali");
                                     System.out.print("Pilih : ");
-                                    int beli2 = input.nextInt();
+                                    int tiketaktris2 = input.nextInt();
                                     System.out.println();
-                                    if (beli2 == 1) {
-                                        tiket2.inputTiket(input);
-                                        tiket2.cetakTiket();
-                                        tiket2.shinhye();
+                                    if (tiketaktris2 == 1) {
+                                        shinhye.inputTiket(input);
+                                        shinhye.cetakTiket();
+                                        shinhye.shinhye();
                                     } else {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
@@ -430,47 +592,43 @@ public class App {
                 }
                 break;
 
-            case 1:
-                System.out.println("Fitur Aktor belum dibuat.");
-                break;
-
             case 3:
                 boolean kembaliIdol = false;
                 while (!kembaliIdol) {
-                    System.out.println("=================================================================");
-                    System.out.println("==========================  MENU IDOL  ==========================");
-                    System.out.println("=================================================================");
+                    System.out.println("===========================================================");
+                    System.out.println("=======================  MENU IDOL  =======================");
+                    System.out.println("===========================================================");
                     System.out.println("1. Lihat Biodata");
                     System.out.println("2. Pembelian Album");
                     System.out.println("3. Ticketing");
                     System.out.println("4. Kembali ke Menu Utama");
-                    System.out.println("-----------------------------------------------------------------");
+                    System.out.println("-----------------------------------------------------------");
                     System.out.print("Pilih Menu: ");
                     int menuIdol = input.nextInt();
                     System.out.println();
                     switch (menuIdol) 
                     {
                         case 1:  
-                            System.out.println("=================================================================");
-                            System.out.println("======================== PILIH BIODATA IDOL =====================");
-                            System.out.println("=================================================================");
+                            System.out.println("===========================================================");
+                            System.out.println("===================== PILIH BIODATA IDOL ==================");
+                            System.out.println("===========================================================");
                             System.out.println("1. NCT Dream");
                             System.out.println("2. Day6");
                             System.out.println("3. Kembali");
-                            System.out.println("-----------------------------------------------------------------");                            
+                            System.out.println("-----------------------------------------------------------");                            
                             System.out.print("Pilih Idol : ");
                             int menubiodataidol = input.nextInt();
                             System.out.println();
                             switch (menubiodataidol) 
                             {
                                 case 1:
-                                    System.out.println("=================================================================");
-                                    System.out.println("======================  BIODATA NCT DREAM =======================");
-                                    System.out.println("=================================================================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("=================== BIODATA NCT DREAM =====================");
+                                    System.out.println("===========================================================");
                                     System.out.println("1. Biodata Group");
                                     System.out.println("2. Biodata Per-member");
                                     System.out.println("3. Keluar");
-                                    System.out.println("-----------------------------------------------------------------");
+                                    System.out.println("-----------------------------------------------------------");
                                     System.out.print("Pilih yang ingin kamu akses biodatanya : ");
                                     int nctdream = input.nextInt();
                                     System.out.println();
@@ -481,9 +639,9 @@ public class App {
                                             break;
                                         
                                         case 2 :
-                                            System.out.println("=================================================================");
-                                            System.out.println("==================== BIODATA MEMBER NCT DREAM ===================");
-                                            System.out.println("=================================================================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("================= BIODATA MEMBER NCT DREAM ================");
+                                            System.out.println("===========================================================");
                                             System.out.println("1. Mark");
                                             System.out.println("2. Renjun");
                                             System.out.println("3. Jeno");
@@ -492,37 +650,37 @@ public class App {
                                             System.out.println("6. Chenle");
                                             System.out.println("7. Jisung");
                                             System.out.println("8. Keluar");
-                                            System.out.println("-----------------------------------------------------------------");
+                                            System.out.println("-----------------------------------------------------------");
                                             System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
                                             int membernct = input.nextInt();
                                             System.out.println();
                                             switch (membernct) {
                                                 case 1 : 
-                                                    dream1.tampilkanbiodatamemberNCTDream();
+                                                    mark.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 case 2 : 
-                                                    dream2.tampilkanbiodatamemberNCTDream();
+                                                    renjun.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 case 3 : 
-                                                    dream3.tampilkanbiodatamemberNCTDream();
+                                                    jeno.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 case 4 : 
-                                                    dream4.tampilkanbiodatamemberNCTDream();
+                                                    haechan.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 case 5 : 
-                                                    dream5.tampilkanbiodatamemberNCTDream();
+                                                    jaemin.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 case 6 : 
-                                                    dream6.tampilkanbiodatamemberNCTDream();
+                                                    chenle.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 case 7 : 
-                                                    dream7.tampilkanbiodatamemberNCTDream();
+                                                    jisung.tampilkanbiodatamemberNCTDream();
                                                     break;
 
                                                 default : 
@@ -533,13 +691,13 @@ public class App {
                                     break;
 
                                 case 2:
-                                    System.out.println("=================================================================");
-                                    System.out.println("========================  BIODATA DAY6  =========================");
-                                    System.out.println("=================================================================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("=====================  BIODATA DAY6  ======================");
+                                    System.out.println("===========================================================");
                                     System.out.println("1. Biodata Group");
                                     System.out.println("2. Biodata Per-member");
                                     System.out.println("3. Keluar");
-                                    System.out.println("-----------------------------------------------------------------");
+                                    System.out.println("-----------------------------------------------------------");
                                     System.out.print("Pilih yang ingin kamu akses biodatanya : ");
                                     int day6 = input.nextInt();
                                     System.out.println();
@@ -550,33 +708,33 @@ public class App {
                                            break;
                                         
                                         case 2 :
-                                            System.out.println("=================================================================");
-                                            System.out.println("====================  BIODATA MEMBER DAY6  ======================");
-                                            System.out.println("=================================================================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("=================  BIODATA MEMBER DAY6  ===================");
+                                            System.out.println("===========================================================");
                                             System.out.println("1. Sungjin");
                                             System.out.println("2. YoungK");
                                             System.out.println("3. Wonpil");
                                             System.out.println("4. Dowoon");
                                             System.out.println("5. Keluar");
-                                            System.out.println("-----------------------------------------------------------------");
+                                            System.out.println("-----------------------------------------------------------");
                                             System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
                                             int memberday6 = input.nextInt();
                                             System.out.println();
                                             switch (memberday6) {
                                                 case 1 : 
-                                                    day1.tampilkanbiodatamemberDAY6();
+                                                    sungjin.tampilkanbiodatamemberDAY6();
                                                     break;
 
                                                 case 2 : 
-                                                    day2.tampilkanbiodatamemberDAY6();
+                                                    youngk.tampilkanbiodatamemberDAY6();
                                                     break;
 
                                                 case 3 : 
-                                                    day3.tampilkanbiodatamemberDAY6();
+                                                    wonpiil.tampilkanbiodatamemberDAY6();
                                                     break;
 
                                                 case 4 : 
-                                                    day4.tampilkanbiodatamemberDAY6();
+                                                    dowoon.tampilkanbiodatamemberDAY6();
                                                     break;
 
                                                 default : 
@@ -592,13 +750,13 @@ public class App {
                             break;
 
                         case 2:  
-                            System.out.println("=================================================================");
-                            System.out.println("=======================  PEMBELIAN ALBUM  =======================");
-                            System.out.println("=================================================================");
+                            System.out.println("===========================================================");
+                            System.out.println("====================  PEMBELIAN ALBUM  ====================");
+                            System.out.println("===========================================================");
                             System.out.println("1. NCT Dream");
                             System.out.println("2. Day6");
                             System.out.println("3. Kembali");
-                            System.out.println("-----------------------------------------------------------------");
+                            System.out.println("-----------------------------------------------------------");
                             System.out.print("Pilih Idol yang anda ingin beli Album nya : ");
                             int menualbum = input.nextInt();
                             System.out.println();
@@ -640,26 +798,26 @@ public class App {
                             break;
 
                         case 3:
-                            System.out.println("=================================================================");
-                            System.out.println("==========================  TICKETING  ==========================");
-                            System.out.println("=================================================================");
+                            System.out.println("===========================================================");
+                            System.out.println("=======================  TICKETING  =======================");
+                            System.out.println("===========================================================");
                             System.out.println("1. NCT Dream");
                             System.out.println("2. Day6");
                             System.out.println("3. Kembali");
-                            System.out.println("-----------------------------------------------------------------");
+                            System.out.println("-----------------------------------------------------------");
                             System.out.print("Pilih : ");
                             int menutiket = input.nextInt();
                             System.out.println();
                             switch (menutiket) 
                             {
                                 case 1:
-                                    System.out.println("=================================================================");
-                                    System.out.println("=====================  TICKETING NCT DREAM  =====================");
-                                    System.out.println("=================================================================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("==================  TICKETING NCT DREAM  ==================");
+                                    System.out.println("===========================================================");
                                     System.out.println("1. Konser");
                                     System.out.println("2. Fanmeeting");
                                     System.out.println("3. Kembali");
-                                    System.out.println("-----------------------------------------------------------------");
+                                    System.out.println("-----------------------------------------------------------");
                                     System.out.print("Pilih : ");
                                     int tiketnct = input.nextInt();
                                     System.out.println();
@@ -701,13 +859,13 @@ public class App {
                                     break;
 
                                 case 2:
-                                    System.out.println("=================================================================");
-                                    System.out.println("=======================  TICKETING DAY6  ========================");
-                                    System.out.println("=================================================================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("====================  TICKETING DAY6  =====================");
+                                    System.out.println("===========================================================");
                                     System.out.println("1. Konser");
                                     System.out.println("2. Fanmeeting");
                                     System.out.println("3. Kembali");
-                                    System.out.println("-----------------------------------------------------------------");
+                                    System.out.println("-----------------------------------------------------------");
                                     System.out.print("Pilih : ");
                                     int tiketday = input.nextInt();
                                     System.out.println();
@@ -756,7 +914,6 @@ public class App {
                             System.out.println("Pilihan tidak valid!");
                     }
                 }
-
 
             case 4:
                 System.out.println("Keluar...");

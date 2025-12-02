@@ -34,47 +34,51 @@ public class TicketKonserIdol extends Idol {
 
     @Override
     public void infoIdol() {
-        System.out.println("=========== BIODATA IDOL ===========");
+        System.out.println("==================================================================");
+        System.out.println("========================= BIODATA IDOL ===========================");
+        System.out.println("==================================================================");
         System.out.println("Nama Idol          : " + nama);
         System.out.println("Kewarganegaraan    : " + kewarganegaraan);
         System.out.println("Tanggal Lahir      : " + ttlLahir);
         System.out.println("Tanggal Debut      : " + ttlDebut);
         System.out.println("Masa Trainee       : " + masaTrainee + " tahun");
-
-        System.out.println("------ INFORMASI EVENT TERKAIT ------");
+        System.out.println("--------------------- INFORMASI EVENT TERKAIT --------------------");
         System.out.println("Event              : " + eventName);
         System.out.println("Jenis Event        : " + eventType);
         System.out.println("Lokasi             : " + lokasi);
         System.out.println("Tanggal            : " + tanggal);
-        System.out.println("=====================================");
+        System.out.println("==================================================================");
         System.out.println();
     }
 
     @Override
     public void infoEvent() {
-        System.out.println("=========== INFO EVENT IDOL ===========");
+        System.out.println("==================================================================");
+        System.out.println("========================= INFO EVENT IDOL ========================");
+        System.out.println("==================================================================");
         System.out.println("Idol         : " + nama);
         System.out.println("Event        : " + eventName);
         System.out.println("Jenis Event  : " + eventType);
         System.out.println("Lokasi       : " + lokasi);
         System.out.println("Tanggal      : " + tanggal);
+        System.out.println("==================================================================");
 
         if (eventType.equals("KONSER")) {
-            System.out.println("--------- KATEGORI & SECTION ---------");
+            System.out.println("--------------------- KATEGORI & SECTION ---------------------");
             System.out.println("VVIP (A/B)     : Rp 3.000.000 / 2.700.000");
             System.out.println("VIP  (A/B/C)   : Rp 1.800.000 / 1.500.000 / 1.300.000");
             System.out.println("REGULAR (A/B)  : Rp 900.000 / 800.000");
             System.out.println("BALCONY LEFT   : Rp 600.000");
             System.out.println("BALCONY RIGHT  : Rp 550.000");
         } else {
-            System.out.println("-------- KATEGORI TIKET FANMEETING --------");
+            System.out.println("----------------- KATEGORI TIKET FANMEETING ------------------");
             System.out.println("HI-TOUCH  : Rp 2.000.000");
             System.out.println("PHOTO OP  : Rp 1.200.000");
             System.out.println("SIGNING   : Rp 900.000");
             System.out.println("REGULAR   : Rp 500.000");
         }
 
-        System.out.println("=======================================");
+        System.out.println("==================================================================");
         System.out.println();
     }
 
@@ -82,7 +86,9 @@ public class TicketKonserIdol extends Idol {
     public void inputTiket(Scanner input) {
         input.nextLine();
 
-        System.out.println("========= PEMBELIAN TIKET =========");
+        System.out.println("==================================================================");
+        System.out.println("======================== PEMBELIAN TIKET =========================");
+        System.out.println("==================================================================");
         System.out.println("Event : " + eventName + " (" + eventType + ")");
 
         System.out.print("Kategori Tiket : ");
@@ -109,13 +115,15 @@ public class TicketKonserIdol extends Idol {
 
         total = harga * qty;
 
-        System.out.println("====================================");
+        System.out.println("==================================================================");
         System.out.println();
     }
 
     @Override
     public void cetakTiket() {
-        System.out.println("============== CETAK TIKET ==============");
+        System.out.println("==================================================================");
+        System.out.println("=========================== CETAK TIKET ==========================");
+        System.out.println("==================================================================");
         System.out.println("Nama        : " + nama);
         System.out.println("Event       : " + eventName);
         System.out.println("Jenis       : " + eventType);
@@ -127,12 +135,14 @@ public class TicketKonserIdol extends Idol {
         System.out.println("Harga/Tiket : Rp " + harga);
         System.out.println("Jumlah      : " + qty);
         System.out.println("Total Harga : Rp " + total);
-        System.out.println("==========================================");
+        System.out.println("==================================================================");
         System.out.println();
     }
 
     public String toString() {
-        return  "===== STRUK TIKET (toString) =====\n" +
+        System.out.println("==================================================================");
+        return  "======================== STRUK TIKET ============================" +
+                "==================================================================" +
                 "Nama Idol     : " + nama + "\n" +
                 "Event         : " + eventName + "\n" +
                 "Jenis Event   : " + eventType + "\n" +
@@ -141,7 +151,7 @@ public class TicketKonserIdol extends Idol {
                 "Harga/Tiket   : Rp " + harga + "\n" +
                 "Jumlah Tiket  : " + qty + "\n" +
                 "Total Harga   : Rp " + total + "\n" +
-                "===================================\n";
+                "=================================================================";
     }
 
     private double tentukanHarga(String eventType, String kategori, String section) {

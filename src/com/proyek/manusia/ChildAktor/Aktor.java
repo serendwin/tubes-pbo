@@ -16,7 +16,7 @@ public class Aktor extends Agensi {
         System.out.println("Menampilkan tiket");}
     public void inputTiket(Scanner input) {
         System.out.println("Input tiketing");}
-    public void Wuseok() {
+    public void leeminho() {
         System.out.println("Mengeluarkan teks selamat membeli tiket Byeon Wu Seok");}
-    public void GongYoo() {
+    public void dongwook() {
         System.out.println("Mengeluarkan teks selamat membeli tiket Gong Yoo");}}

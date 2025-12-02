@@ -17,9 +17,9 @@ public class BiodataAktris extends Aktris {
 
     @Override
     public void tampilkanAktris() {
-        System.out.println("=================================================");
-        System.out.println("==============   BIODATA AKTRIS   ===============");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("======================   BIODATA AKTRIS   =======================");
+        System.out.println("=================================================================");
         System.out.println("Nama             : " + nama);
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
@@ -27,7 +27,7 @@ public class BiodataAktris extends Aktris {
         System.out.println("Drama            : " + listDrama);
         System.out.println("Movie            : " + listMovie);
         System.out.println("Penghargaan      : " + penghargaan);
-        System.out.println("=================================================\n");
+        System.out.println("=================================================================");
         System.out.println();
     }
 }

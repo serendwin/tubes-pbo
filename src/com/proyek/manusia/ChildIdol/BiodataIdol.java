@@ -16,38 +16,38 @@ public class BiodataIdol extends Idol {
 
     @Override
     public void tampilkanbiodatagroupidol() {
-        System.out.println("=================================================");
-        System.out.println("===============  BIODATA GROUP  =================");
-        System.out.println("=================================================");
+        System.out.println("==================================================================");
+        System.out.println("========================  BIODATA GROUP  =========================");
+        System.out.println("==================================================================");
         System.out.println("Group Boyband: " + nama);
         System.out.println("Debut: " + ttlDebut);
         System.out.println("Album Terakhir: " + album);
         System.out.println("Penghargaan: " + penghargaan);
-        System.out.println("=================================================");        
+        System.out.println("==================================================================");        
         System.out.println();}
 
     @Override
     public void tampilkanbiodatamemberNCTDream(){
-        System.out.println("=================================================");
-        System.out.println("===========  BIODATA MEMBER NCT DREAM  ==========");
-        System.out.println("=================================================");
+        System.out.println("==================================================================");
+        System.out.println("====================  BIODATA MEMBER NCT DREAM  ==================");
+        System.out.println("==================================================================");
         System.out.println("Nama: " + nama);
         System.out.println("Tanggal Lahir: " + ttlLahir);
         System.out.println("Kewarganegaraan: " + kewarganegaraan);
         System.out.println("Masa Trainee: " + masaTrainee);
         System.out.println("Posisi: " + posisi);
-        System.out.println("=================================================");
+        System.out.println("==================================================================");
         System.out.println();}
  
     @Override
     public void tampilkanbiodatamemberDAY6(){
-        System.out.println("=================================================");
-        System.out.println("==============  BIODATA MEMBER DAY6  ============");
-        System.out.println("=================================================");
+        System.out.println("==================================================================");
+        System.out.println("======================  BIODATA MEMBER DAY6  =====================");
+        System.out.println("==================================================================");
         System.out.println("Nama: " + nama);
         System.out.println("Tanggal Lahir: " + ttlLahir);
         System.out.println("Kewarganegaraan: " + kewarganegaraan);
         System.out.println("Masa Trainee: " + masaTrainee);
         System.out.println("Posisi: " + posisi);                
-        System.out.println("=================================================");}
+        System.out.println("==================================================================");}
 }

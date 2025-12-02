@@ -28,27 +28,27 @@ public class TicketingFanmeetingAktris extends Aktris {
 
     @Override
     public void infoEvent() {
-        System.out.println("=================================================");
-        System.out.println("==============  INFO EVENT & PRICELIST  =========");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("====================  INFO EVENT & PRICELIST  ===================");
+        System.out.println("=================================================================");
         System.out.println("Aktris         : " + nama);
         System.out.println("Event          : " + event);
         System.out.println("Lokasi         : " + lokasi);
         System.out.println("Tanggal        : " + tanggal);
-        System.out.println("---------------  KATEGORI TIKET  ----------------");
+        System.out.println("------------------------  KATEGORI TIKET  -----------------------");
         System.out.println("VVIP           : Rp " + tentukanHarga("VVIP"));
         System.out.println("VIP            : Rp " + tentukanHarga("VIP"));
         System.out.println("REGULAR        : Rp " + tentukanHarga("REGULAR"));
         System.out.println("BALCONY        : Rp " + tentukanHarga("BALCONY"));
-        System.out.println("==================================================");
+        System.out.println("=================================================================");
     }
 
     @Override
     public void inputTiket(Scanner input) {
         input.nextLine();
-        System.out.println("=================================================");
-        System.out.println("===========  PEMBELIAN TIKET FANMEETING =========");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("===================  PEMBELIAN TIKET FANMEETING =================");
+        System.out.println("=================================================================");
         System.out.println("Aktris        : " + nama);
         System.out.println("Event         : " + event);
         System.out.print("Kategori      : ");
@@ -58,22 +58,22 @@ public class TicketingFanmeetingAktris extends Aktris {
         System.out.print("Masukkan jumlah tiket : ");
         this.qty = input.nextInt();
         this.total = this.harga * this.qty;
-        System.out.println("===================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 
     @Override
     public void cetakTiket() {
-        System.out.println("=================================================");
-        System.out.println("==============  CETAK TIKET FANMEETING  =========");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("======================  CETAK TIKET FANMEETING  =================");
+        System.out.println("=================================================================");
         System.out.println("Aktris       : " + this.nama);
         System.out.println("Event        : " + this.event);
         System.out.println("Kategori     : " + this.kategori);
         System.out.println("Harga/Tiket  : Rp " + this.harga);
         System.out.println("Jumlah Tiket : " + this.qty);
         System.out.println("Total Harga  : Rp " + this.total);
-        System.out.println("=================================================\n");
+        System.out.println("=================================================================");
         System.out.println();
     }
 
