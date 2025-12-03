@@ -425,6 +425,7 @@ public class App
 
                                 default:
                                     System.out.println("Pilihan tidak valid!");
+                                    System.out.println();
                             }
                             break;
 
@@ -457,6 +458,7 @@ public class App
                                     else 
                                     {
                                         System.out.println("Anda membatalkan pembelian.");
+                                        System.out.println();
                                     }
                                     break;
 
@@ -476,6 +478,7 @@ public class App
                                     else 
                                     {
                                         System.out.println("Anda membatalkan pembelian.");
+                                        System.out.println();
                                     }
                                     break;
 
@@ -484,6 +487,7 @@ public class App
 
                                 default:
                                     System.out.println("Anda telah keluar");
+                                    System.out.println();
                             }
                             break;
 
@@ -493,6 +497,7 @@ public class App
 
                         default:
                             System.out.println("Pilihan tidak valid!");
+                            System.out.println();
                     }
                 }
                 break;
@@ -539,6 +544,7 @@ public class App
 
                                 default:
                                     System.out.println("Pilihan tidak valid!");
+                                    System.out.println();
                             }
                             break;
 
@@ -570,6 +576,7 @@ public class App
                                     else 
                                     {
                                         System.out.println("Anda membatalkan pembelian.");
+                                        System.out.println();
                                     }
                                     break;
 
@@ -589,6 +596,7 @@ public class App
                                     else 
                                     {
                                         System.out.println("Anda membatalkan pembelian.");
+                                        System.out.println();
                                     }
                                     break;
 
@@ -597,6 +605,7 @@ public class App
 
                                 default:
                                     System.out.println("Anda telah keluar");
+                                    System.out.println();
                             }
                             break;
 
@@ -606,6 +615,7 @@ public class App
 
                         default:
                             System.out.println("Pilihan tidak valid!");
+                            System.out.println();
                     }
                 }
                 break;
@@ -759,6 +769,7 @@ public class App
 
                                                 default : 
                                                     System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
                                             }
 
                                     }
@@ -797,6 +808,7 @@ public class App
                                     else 
                                     {
                                         System.out.println("Anda membatalkan pembelian.");
+                                        System.out.println();
                                     }
                                     break;
 
@@ -815,11 +827,13 @@ public class App
                                     else 
                                     {
                                         System.out.println("Anda membatalkan pembelian.");
+                                        System.out.println();
                                     }
                                     break;
 
                                 default:
                                     System.out.println("Anda telah keluar");
+                                    System.out.println();
                             }
                             break;
 
@@ -864,6 +878,7 @@ public class App
                                         else 
                                         {
                                             System.out.println("Anda membatalkan pembelian.");
+                                            System.out.println();
                                         }
                                         break;
 
@@ -882,11 +897,13 @@ public class App
                                         else 
                                         {
                                             System.out.println("Anda membatalkan pembelian.");
+                                            System.out.println();
                                         }
                                         break;
 
                                         default:
                                             System.out.println("Anda telah keluar");
+                                            System.out.println();
                                     } 
                                     break;
 
@@ -918,6 +935,7 @@ public class App
                                         else 
                                         {
                                             System.out.println("Anda membatalkan pembelian.");
+                                            System.out.println();
                                         }
                                         break;
 
@@ -936,26 +954,34 @@ public class App
                                         else 
                                         {
                                             System.out.println("Anda membatalkan pembelian.");
+                                            System.out.println();
                                         }
                                         break;
 
                                         default:
                                             System.out.println("Anda telah keluar");
+                                            System.out.println();
                                     } 
                                     break;
 
                                 default:
                                     System.out.println("Anda telah keluar");
+                                    System.out.println();
                             }
+                            break;
+
+                        case 4:
+                            kembaliIdol = true;
                             break;
 
                         default:
                             System.out.println("Pilihan tidak valid!");
+                            System.out.println();
                     }
                 }
 
             case 4:
-                System.out.println("Keluar...");
+                System.out.println("Anda telah keluar dari program. Terima kasih!");
                 break;
 
             default:
