@@ -10,11 +10,12 @@ import com.proyek.manusia.ChildIdol.BiodataIdol;
 import com.proyek.manusia.ChildIdol.PembelianAlbum;
 import com.proyek.manusia.ChildIdol.TicketKonserIdol;
 
-public class App {
-    public static void main(String[] args) {
+public class App 
+{
+    public static void main(String[] args) 
+    {
 
         Scanner input = new Scanner(System.in);
-
 
         BiodataAktor aktor1 = new BiodataAktor(
                 "Lee Min-ho",
@@ -127,7 +128,7 @@ public class App {
                 "-",
                 "-",
                 "Hot Sauce (2021)",
-                "Seoul Music Awards – Bonsang"
+                "Seoul Music Awards - Bonsang"
         );
 
         BiodataIdol idol2 = new BiodataIdol(
@@ -364,7 +365,9 @@ public class App {
                 "-"
         );
 
-        
+        boolean kembaliutama = false;
+        while (!kembaliutama) 
+        {
         System.out.println("______________________________________________________________________");
         System.out.println("=====Hello My Dear, Welcome to Our House, MihuMihu Entertaintment!====");
         System.out.println("----------------------------------------------------------------------");
@@ -374,15 +377,16 @@ public class App {
         System.out.println("2. Aktris");
         System.out.println("3. Idol");
         System.out.println("4. Keluar");
+        System.out.println("----------------------------------------------------------------------");
         System.out.print("Pilih menu : ");
         int menuUtama = input.nextInt();
-        System.out.println("----------------------------------------------------------------------");
         System.out.println();
         switch (menuUtama) 
         {
             case 1: 
                 boolean kembaliAktor = false;
-                while (!kembaliAktor) {
+                while (!kembaliAktor) 
+                {
                     System.out.println("=================================================================");
                     System.out.println("=========================  MENU AKTOR   =========================");
                     System.out.println("=================================================================");
@@ -406,7 +410,8 @@ public class App {
                             System.out.print("Pilih Aktor : ");
                             int menuBiodataaktor = input.nextInt();
                             System.out.println();
-                            switch (menuBiodataaktor) {
+                            switch (menuBiodataaktor) 
+                            {
                                 case 1:
                                     aktor1.tampilkanAktor();
                                     break;
@@ -443,11 +448,14 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int tiketaktor1 = input.nextInt();
                                     System.out.println();
-                                    if (tiketaktor1 == 1) {
+                                    if (tiketaktor1 == 1) 
+                                    {
                                         leeminho.inputTiket(input);
                                         leeminho.cetakTiket();
                                         leeminho.leeminho();
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
@@ -459,11 +467,14 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int tiketaktor2 = input.nextInt();
                                     System.out.println();
-                                    if (tiketaktor2 == 1) {
+                                    if (tiketaktor2 == 1) 
+                                    {
                                         leedongwook.inputTiket(input);
                                         leedongwook.cetakTiket();
                                         leedongwook.dongwook();
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
@@ -488,7 +499,8 @@ public class App {
 
             case 2: 
                 boolean kembaliAktris = false;
-                while (!kembaliAktris) {
+                while (!kembaliAktris) 
+                {
                     System.out.println("=================================================================");
                     System.out.println("=========================  MENU AKTRIS ==========================");
                     System.out.println("=================================================================");
@@ -512,7 +524,8 @@ public class App {
                             System.out.print("Pilih Aktris : ");
                             int menubiodataaktris = input.nextInt();
                             System.out.println();
-                            switch (menubiodataaktris) {
+                            switch (menubiodataaktris) 
+                            {
                                 case 1:
                                     aktris1.tampilkanAktris();
                                     break;
@@ -553,7 +566,9 @@ public class App {
                                         jiwon.inputTiket(input);
                                         jiwon.cetakTiket();
                                         jiwon.jiwon();
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
@@ -565,11 +580,14 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int tiketaktris2 = input.nextInt();
                                     System.out.println();
-                                    if (tiketaktris2 == 1) {
+                                    if (tiketaktris2 == 1) 
+                                    {
                                         shinhye.inputTiket(input);
                                         shinhye.cetakTiket();
                                         shinhye.shinhye();
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
@@ -594,7 +612,8 @@ public class App {
 
             case 3:
                 boolean kembaliIdol = false;
-                while (!kembaliIdol) {
+                while (!kembaliIdol) 
+                {
                     System.out.println("===========================================================");
                     System.out.println("=======================  MENU IDOL  =======================");
                     System.out.println("===========================================================");
@@ -610,7 +629,7 @@ public class App {
                     {
                         case 1:  
                             System.out.println("===========================================================");
-                            System.out.println("===================== PILIH BIODATA IDOL ==================");
+                            System.out.println("==================== PILIH BIODATA IDOL ===================");
                             System.out.println("===========================================================");
                             System.out.println("1. NCT Dream");
                             System.out.println("2. Day6");
@@ -623,7 +642,7 @@ public class App {
                             {
                                 case 1:
                                     System.out.println("===========================================================");
-                                    System.out.println("=================== BIODATA NCT DREAM =====================");
+                                    System.out.println("==================== BIODATA NCT DREAM ====================");
                                     System.out.println("===========================================================");
                                     System.out.println("1. Biodata Group");
                                     System.out.println("2. Biodata Per-member");
@@ -720,7 +739,8 @@ public class App {
                                             System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
                                             int memberday6 = input.nextInt();
                                             System.out.println();
-                                            switch (memberday6) {
+                                            switch (memberday6) 
+                                            {
                                                 case 1 : 
                                                     sungjin.tampilkanbiodatamemberDAY6();
                                                     break;
@@ -769,10 +789,13 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int albumnct = input.nextInt();
                                     System.out.println();
-                                    if (albumnct == 1) {
+                                    if (albumnct == 1) 
+                                    {
                                         album1.beliAlbum1(input);
                                         album1.cetakStruk();
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
@@ -784,10 +807,13 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int albumday6 = input.nextInt();
                                     System.out.println();
-                                    if (albumday6 == 1) {
+                                    if (albumday6 == 1) 
+                                    {
                                         album2.beliAlbum2(input);
                                         album2.cetakStruk();
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         System.out.println("Anda membatalkan pembelian.");
                                     }
                                     break;
@@ -830,10 +856,13 @@ public class App {
                                         System.out.print("Pilih : ");
                                         int konsernct = input.nextInt();
                                         System.out.println();
-                                        if (konsernct == 1) {
+                                        if (konsernct == 1) 
+                                        {
                                             konser1.inputTiket(input);
                                             konser1.cetakTiket();
-                                        } else {
+                                        } 
+                                        else 
+                                        {
                                             System.out.println("Anda membatalkan pembelian.");
                                         }
                                         break;
@@ -845,10 +874,13 @@ public class App {
                                         System.out.print("Pilih : ");
                                         int fanmeetnct = input.nextInt();
                                         System.out.println();
-                                        if (fanmeetnct == 1) {
+                                        if (fanmeetnct == 1) 
+                                        {
                                             fanmeet1.inputTiket(input);
                                             fanmeet1.cetakTiket();
-                                        } else {
+                                        } 
+                                        else 
+                                        {
                                             System.out.println("Anda membatalkan pembelian.");
                                         }
                                         break;
@@ -869,7 +901,8 @@ public class App {
                                     System.out.print("Pilih : ");
                                     int tiketday = input.nextInt();
                                     System.out.println();
-                                    switch (tiketday) {
+                                    switch (tiketday) 
+                                    {
                                         case 1 : 
                                         konser2.infoEvent();
                                         System.out.println("1. Beli Tiket");
@@ -877,10 +910,13 @@ public class App {
                                         System.out.print("Pilih : ");
                                         int konserday6 = input.nextInt();
                                         System.out.println();
-                                        if (konserday6 == 1) {
+                                        if (konserday6 == 1) 
+                                        {
                                             konser2.inputTiket(input);
                                             konser2.cetakTiket();
-                                        } else {
+                                        } 
+                                        else 
+                                        {
                                             System.out.println("Anda membatalkan pembelian.");
                                         }
                                         break;
@@ -892,10 +928,13 @@ public class App {
                                         System.out.print("Pilih : ");
                                         int fanmeetday6 = input.nextInt();
                                         System.out.println();
-                                        if (fanmeetday6 == 1) {
+                                        if (fanmeetday6 == 1) 
+                                        {
                                             fanmeet2.inputTiket(input);
                                             fanmeet2.cetakTiket();
-                                        } else {
+                                        } 
+                                        else 
+                                        {
                                             System.out.println("Anda membatalkan pembelian.");
                                         }
                                         break;
@@ -923,6 +962,7 @@ public class App {
                 System.out.println("Pilihan tidak valid!");
         }
 
-        input.close();
     }
+    }
+
 }

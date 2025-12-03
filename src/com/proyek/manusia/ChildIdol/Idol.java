@@ -18,10 +18,6 @@ public class Idol extends Agensi{
     public void tampilkanbiodatamemberDAY6() {
         System.out.println("Menampilkan biodata idol");}
 
-    public void infoIdol() {
-        System.out.println("Menampilkan info idol");
-    }
-
     public void infoEvent() {
         System.out.println("Menampilkan info event");}
 
